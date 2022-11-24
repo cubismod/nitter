@@ -1,7 +1,7 @@
 FROM nimlang/nim:1.6.2-alpine-regular as nim
-LABEL maintainer="setenforce@protonmail.com"
+LABEL maintainer="git@hexa.mozmail.com"
 
-RUN apk --no-cache add libsass-dev pcre
+RUN apk --no-cache add libsass-dev pcre libcrypto3
 
 WORKDIR /src/nitter
 
